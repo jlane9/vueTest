@@ -20,8 +20,8 @@ const routes: Array<RouteRecordRaw> = [
         component: () => import('@/views/Geolocation.vue')
       },
       {
-        path: 'tab2',
-        component: () => import('@/views/Tab2Page.vue')
+        path: 'google-maps',
+        component: () => import('@/views/GoogleMaps.vue')
       },
       {
         path: 'tab3',
