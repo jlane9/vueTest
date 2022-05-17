@@ -5,7 +5,7 @@ import TabsPage from '../views/TabsPage.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    redirect: '/tabs/geolocation'
+    redirect: '/tabs/google-maps'
   },
   {
     path: '/tabs/',
@@ -13,11 +13,7 @@ const routes: Array<RouteRecordRaw> = [
     children: [
       {
         path: '',
-        redirect: '/tabs/geolocation'
-      },
-      {
-        path: 'geolocation',
-        component: () => import('@/views/Geolocation.vue')
+        redirect: '/tabs/google-maps'
       },
       {
         path: 'google-maps',

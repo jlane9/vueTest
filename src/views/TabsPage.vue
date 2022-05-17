@@ -3,11 +3,6 @@
     <ion-tabs>
       <ion-router-outlet></ion-router-outlet>
       <ion-tab-bar slot="bottom">
-        <ion-tab-button tab="geolocation" href="/tabs/geolocation">
-          <ion-icon :icon="globeOutline" />
-          <ion-label>Geolocation</ion-label>
-        </ion-tab-button>
-          
         <ion-tab-button tab="google-maps" href="/tabs/google-maps">
           <ion-icon :icon="mapOutline" />
           <ion-label>Google Maps</ion-label>
@@ -25,7 +20,7 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import { IonTabBar, IonTabButton, IonTabs, IonLabel, IonIcon, IonPage, IonRouterOutlet } from '@ionic/vue';
-import { square, globeOutline, mapOutline } from 'ionicons/icons';
+import { square, mapOutline } from 'ionicons/icons';
 
 export default defineComponent({
   name: 'TabsPage',
@@ -33,7 +28,6 @@ export default defineComponent({
   setup() {
     return {
       square,
-      globeOutline,
       mapOutline
     }
   }
