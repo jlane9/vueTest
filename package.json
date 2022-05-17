@@ -5,6 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build:android": "npm run build && npx cap sync android",
+    "build:ios": "npm run build && npx cap sync ios",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint"
@@ -17,8 +19,10 @@
     "@capacitor/haptics": "1.1.4",
     "@capacitor/ios": "^3.5.1",
     "@capacitor/keyboard": "1.2.2",
+    "@capacitor/local-notifications": "^1.1.0",
     "@capacitor/status-bar": "1.0.8",
     "@ionic-native/geolocation": "^5.36.0",
+    "@ionic/pwa-elements": "^3.1.1",
     "@ionic/vue": "^6.0.0",
     "@ionic/vue-router": "^6.0.0",
     "core-js": "^3.6.5",

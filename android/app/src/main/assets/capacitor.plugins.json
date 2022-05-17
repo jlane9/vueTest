@@ -4,10 +4,6 @@
 		"classpath": "com.capacitorjs.plugins.app.AppPlugin"
 	},
 	{
-		"pkg": "@capacitor/geolocation",
-		"classpath": "com.capacitorjs.plugins.geolocation.GeolocationPlugin"
-	},
-	{
 		"pkg": "@capacitor/google-maps",
 		"classpath": "com.capacitorjs.plugins.googlemaps.CapacitorGoogleMapsPlugin"
 	},
@@ -20,8 +16,8 @@
 		"classpath": "com.capacitorjs.plugins.keyboard.KeyboardPlugin"
 	},
 	{
-		"pkg": "@capacitor/push-notifications",
-		"classpath": "com.capacitorjs.plugins.pushnotifications.PushNotificationsPlugin"
+		"pkg": "@capacitor/local-notifications",
+		"classpath": "com.capacitorjs.plugins.localnotifications.LocalNotificationsPlugin"
 	},
 	{
 		"pkg": "@capacitor/status-bar",
